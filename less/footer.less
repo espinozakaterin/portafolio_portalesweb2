@@ -1,0 +1,45 @@
+@primary-bg-color: #015de7;
+@primary-tx-color: #fff;
+@secondary-bg-color: #fff;
+@secondary-tx-color: #1a1d1b;
+
+@primary-shadow: #000;
+
+@display_breaks : {
+    md: 720px;
+    lg: 1025px;
+    xlg: 1201px;
+}
+@import "header.less";
+@import "form.less";
+@import "footer.less";
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    height:100%;
+}
+
+body {
+    min-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: @secondary-bg-color;
+    color: @secondary-tx-color;
+}
+footer {
+    background-color: @primary-bg-color;
+    color:@secondary-tx-color;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.pie-pagina a {
+    font-size: 30px;
+    margin: 0 80px;
+}

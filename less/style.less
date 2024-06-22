@@ -1,0 +1,142 @@
+@primary-bg-color: #015de7;
+@primary-tx-color: #fff;
+@secondary-bg-color: #fff;
+@secondary-tx-color: #1a1d1b;
+
+@primary-shadow: #000;
+
+@display_breaks : {
+    md: 720px;
+    lg: 1025px;
+    xlg: 1201px;
+}
+
+
+@import "header.less";
+@import "form.less";
+@import "footer.less";
+@import "grid.less";
+@import "contenedores.less";
+* {
+    box-sizing: border-box;
+}
+
+html{
+    height:100%;
+}
+
+body {
+    min-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: @secondary-bg-color;
+    color: @secondary-tx-color;
+}
+
+.hero {
+    img {
+        width:100%;
+        object-fit: cover;
+    }
+}
+
+.fullimg {
+    width:60%;
+    object-fit: cover;
+    margin-left: 100px
+}
+
+/*otra parte*/
+.imagen{
+    img {
+        padding: 5px;
+        opacity: 0.5;
+
+} 
+}
+
+.imagen-informacion {
+    img:hover {
+    filter: grayscale(0%);
+    transform: scale(2.05);
+    }
+}
+
+
+.sobremi {
+    margin: 80px 45px;
+    display: flex;
+    text-align: justify;
+}
+
+.informacion-sobremi {
+    margin: 40 90px;
+}
+
+.imagen-informacion {
+    text-align: center;
+}
+
+.imagen-informacion img {
+    padding: 5px;
+    border: 2px solid #1724d3;
+}
+
+.imagen-informacion img:hover {
+    border: 2px solid #020202;
+}
+
+/*contenedores*/
+/*
+.cursos {
+    display: flex;
+    padding: 0 5px;
+    background-color: var(--azul);
+    color: var(--blanco);
+
+}
+
+
+.intro {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+}
+
+.cursos2 {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+}
+
+.cursos3 {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    padding: 10px;
+}
+
+:root {
+    --azul: #0568b9;
+    --blanco: #F2F2F2;
+}
+
+.imagen-infor {
+    text-align: center;
+    img {
+        padding: 5px;
+        border: 2px solid #020202;
+    }
+    img:hover {
+        border: 2px solid #fdfcfd;
+    }
+    
+}
+*/

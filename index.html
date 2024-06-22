@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portafolio_Katerin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="less/style.less">
+</head>
+
+
+<body>
+    {{> headers}}
+    <main>
+        <section class="sobremi">
+            <section class="informacion-sobremi" id="informacion-sobremi">
+                <h1>Sobre Mí:</h1><br>
+                <p>
+                    Mi nombre es Katerin Maria Aguilar Espinoza.<br>
+                    <br>
+                    Estudio en la Universidad Católica de Honduras(UNICAH).<br>
+                    <br>
+                    Soy un estudiante de cuarto año de Ingeniería en Ciencias de la Computación.<br>
+                    <br>
+                    Apasionado por el área de redes y el diseño gráfico.<br>
+                    <br>
+                    Tengo experiencia en proyectos académicos y
+                    prácticas profesionales que me han permitido desarrollar habilidades tanto técnicas como creativas.
+                </p>
+                <br>
+                <p>
+                    Nací el 24 de Mayo.
+                </p>
+                <br>
+                <p>
+                    Tengo la edad de 23 años.
+                </p>
+            </section>
+            <section class="imagen-informacion">
+                <img src="public/Katy.jpg" alt="" style="width: 50%;">
+                <h3>Katerin Aguilar</h3>
+            </section>
+        </section>
+    </main>
+
+    <section class="cursos">
+        <section class="intro" style="width: 50%;" id="intro">
+            <h1>Educación Primaria</h1>
+            <ul>
+                <li>Escuela Urbana Dionicio de Herrera</li><br>
+            </ul>
+            <section class="imagen-infor">
+                <img width="60%" src="public/Escuela.jpg" alt="">
+            </section>
+
+        </section>
+
+        <section class="cursos2" style="width: 50%;">
+            <h1>Educación Secundaria Y preparatoria</h1>
+
+            <ul>
+                <li>Instituto Polivalente "José Maria Espinoza"</li><br>
+                <section class="imagen-infor">
+                    <img width="60%" src="public/Chema.png" alt="">
+                </section>
+        </section>
+
+        <section class="cursos3" style="width: 40%;">
+
+            <h1>Educación Superior</h1>
+
+            <ul>
+                <li>Universidad Catolica de Honduras</li>
+                <br>
+            </ul>
+            <section class="imagen-infor">
+                <img width="60%" src="public/unicah.jpeg" alt="">
+            </section>
+        </section>
+    </section>
+
+    </div>
+    <section id="logros" class="grid bg-grey">
+        <div class="row width960">
+            <section class="col-6 col-m-6 offset-m-3` stretch padding">
+                <h2>Contactame</h2>
+                <form class="col-6 col-m-6 modern">
+                    <div class="field">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" />
+                    </div>
+                    <div class="field">
+                        <label for="correo">Correo</label>
+                        <input type="email" id="correo" name="correo" />
+                    </div>
+                    <div class="field">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje"></textarea>
+                    </div>
+                    <div class="actions">
+                        <input type="submit" value="Enviar" />
+                    </div>
+                </form>
+            </section>
+            <section class="col-6 col-m-6">
+                <img class="fullimg" src="public/contactanos.png" alt="Foto Panel Izquierdo" />
+            </section>
+    </section>
+    {{> footers}}
+
+</body>
+
+</html>

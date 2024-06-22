@@ -1,0 +1,100 @@
+@primary-bg-color: #015de7;
+@primary-tx-color: #fff;
+@secondary-bg-color: #fff;
+@secondary-tx-color: #1a1d1b;
+@primary-con-color: #1e95cc;
+
+@primary-shadow: #000;
+
+@display_breaks : {
+    md: 720px;
+    lg: 1025px;
+    xlg: 1201px;
+}
+@import "header.less";
+@import "form.less";
+@import "footer.less";
+@import "grid.less";
+@import "contenedores.less";
+* {
+    box-sizing: border-box;
+}
+
+html{
+    height:100%;
+}
+
+body {
+    min-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: @secondary-bg-color;
+    color: @secondary-tx-color;
+}
+
+.hero {
+    img {
+        width:100%;
+        object-fit: cover;
+    }
+}
+
+.fullimg {
+    width:100%;
+    object-fit: cover;
+}
+
+
+.cursos {
+    display: flex;
+    padding: 0 5px;
+    background-color: var(--azul);
+    color: var(--blanco);
+
+}
+
+
+.intro {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+}
+
+.cursos2 {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+}
+
+.cursos3 {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    padding: 10px;
+}
+
+:root {
+
+    --azul: @primary-con-color;
+    --blanco: @secondary-bg-color;
+}
+
+.imagen-infor {
+    text-align: center;
+    img {
+        padding: 5px;
+        border: 2px solid @primary-shadow;
+    }
+    img:hover {
+        border: 2px solid @secondary-bg-color;
+    }
+    
+}
+
